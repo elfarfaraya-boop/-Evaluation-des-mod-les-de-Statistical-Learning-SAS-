@@ -1,2 +1,2 @@
-# -valuation-des-mod-les-de-Statistical-Learning-SAS-
-Comparaison des méthodes de statistical learning et de machine learning : évaluation des performances et du compromis biais- variance sur plusieurs scénarios de données simulées (multicolinéarité, valeurs extrêmes, ruptures structurelles).
+# Evaluation of Statistical and Machine Learning Models (SAS)
+Comparison of statistical learning and machine learning methods: performance evaluation and bias–variance trade-off analysis across multiple simulated data scenarios (multicollinearity, outliers, structural breaks).
