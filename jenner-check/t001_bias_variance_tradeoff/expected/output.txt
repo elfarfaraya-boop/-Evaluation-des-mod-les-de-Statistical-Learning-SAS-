@@ -1,0 +1,8 @@
+--- COMPROMIS BIAIS VARIANCE (Degr�s 0, 2, 8) ---
+
+  0.2897  0.0061
+       0  0.0073
+       0  0.0218
+
+                                Illustration Overfitting (Deg 8) vs Underfitting (Deg 0)                                
+

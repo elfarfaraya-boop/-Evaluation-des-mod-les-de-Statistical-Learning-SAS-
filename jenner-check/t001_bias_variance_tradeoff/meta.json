@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_bias_variance_tradeoff",
+  "source_file": "bias var compromise.sas",
+  "source_blob_sha": "b600ed0c42b3d4242b76f697c4ea7b1773e2d090",
+  "source_commit": "3b94f552114db089feb78434b61d8e36f0695190",
+  "notes": "Self-contained PROC IML Monte Carlo (randseed 12345) computing the bias-variance decomposition for polynomial OLS fits of degree 0/2/8 to y=2x^2+1; prints the squared-bias vs variance table and an SGPLOT of the three fits. Runs unmodified (no external data)."
+}

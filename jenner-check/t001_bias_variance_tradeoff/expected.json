@@ -1,0 +1,19 @@
+{
+  "_captured_at": "2026-07-13T08:32:20.701284Z",
+  "_captured_run_id": "r_96d6e1c19e5b4ab08b9237fffcf2839e",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: PROC IML",
+    "NOTE: PROC SGPLOT data=PlotDS",
+    "NOTE: PROC SGPLOT output written to: ./ods_output/sgplot.svg"
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

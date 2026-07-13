@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_glmselect_diabetes",
+  "source_file": "EMPIRICAL ANALYSIS.sas",
+  "source_blob_sha": "5f503f9e27485de77d582662b04d3d93fc7eda8f",
+  "source_commit": "3b94f552114db089feb78434b61d8e36f0695190",
+  "notes": "The four PROC GLMSELECT variable-selection runs from EMPIRICAL ANALYSIS.sas (stepwise AIC, stepwise SBC, LASSO, elastic net) with partition fraction(validate=0.3) and seed=12345, unchanged. The hardcoded SAS-Studio infile was replaced with an inline 45-row datalines sample (AGE SEX BMI BP S1-S6 Y, Efron et al. 2004 layout) so the bundle is self-contained. Stepwise selection recovers the BMI/BP/S5 signal."
+}

@@ -1,0 +1,182 @@
+                                         1. Selection STEPWISE avec critere AIC                                         
+
+The GLMSELECT Procedure
+
+
+Dependent Variable: Y
+
+
+Number of Observations Used: 31                   
+Number of Observations Used for Validation: 14    
+Validation Average Squared Error (ASE): 738.744304
+
+Partition Fractions 
+
+      Role  Fraction
+----------  --------
+  Training    0.7000
+Validation    0.3000
+   Testing    0.0000
+
+                                                   Stepwise Selection Summary                                                    
+
+    Step    Action    Effect  Number Effects In  R-Square  Adj R-Sq       AIC      AICC       BIC       SBC      C(p)       PRESS
+--------  --------  --------  -----------------  --------  --------  --------  --------  --------  --------  --------  ----------
+       1   Removed        S1                  9    0.6981    0.5687  217.6199  228.6199  230.0005  231.9597    9.0104  42607.9169
+       2   Removed        S6                  8    0.6975    0.5876  215.6776  224.2490  226.9143  228.5834    7.0477  39209.3463
+       3   Removed        S3                  7    0.6957    0.6031  213.8675  220.4130  223.8809  225.3394    5.1709  35313.5610
+       4   Removed       SEX                  6    0.6944    0.6181  211.9941  216.8637  220.8595  222.0320    3.2535  32681.6075
+       5   Removed       AGE                  5    0.6891    0.6270  210.5271  214.0271  218.0722  219.1310    1.6046  31162.6622
+       6   Removed        S2                  4    0.6777    0.6281  209.6475  212.0475  215.7516  216.8174    0.3630  29673.3005
+       7   Removed        S4                  3    0.6677    0.6308  208.5967  210.1352  213.5237  214.3327   -0.9727  27098.7714
+
+        Parameter Estimates         
+
+Parameter   Estimate  Standard Error
+---------  ---------  --------------
+Intercept  156.16921         5.10721
+BMI        456.07015       104.23451
+BP         294.53653        97.66559
+S5         481.68763       103.85780
+
+R-Square            0.6677    Adj R-Sq            0.6308
+
+
+                                         2. Selection STEPWISE avec critere SBC                                         
+
+The GLMSELECT Procedure
+
+
+Dependent Variable: Y
+
+
+Number of Observations Used: 31                   
+Number of Observations Used for Validation: 14    
+Validation Average Squared Error (ASE): 738.744304
+
+Partition Fractions 
+
+      Role  Fraction
+----------  --------
+  Training    0.7000
+Validation    0.3000
+   Testing    0.0000
+
+                                                   Stepwise Selection Summary                                                    
+
+    Step    Action    Effect  Number Effects In  R-Square  Adj R-Sq       AIC      AICC       BIC       SBC      C(p)       PRESS
+--------  --------  --------  -----------------  --------  --------  --------  --------  --------  --------  --------  ----------
+       1   Removed        S1                  9    0.6981    0.5687  217.6199  228.6199  230.0005  231.9597    9.0104  42607.9169
+       2   Removed        S6                  8    0.6975    0.5876  215.6776  224.2490  226.9143  228.5834    7.0477  39209.3463
+       3   Removed        S3                  7    0.6957    0.6031  213.8675  220.4130  223.8809  225.3394    5.1709  35313.5610
+       4   Removed       SEX                  6    0.6944    0.6181  211.9941  216.8637  220.8595  222.0320    3.2535  32681.6075
+       5   Removed       AGE                  5    0.6891    0.6270  210.5271  214.0271  218.0722  219.1310    1.6046  31162.6622
+       6   Removed        S2                  4    0.6777    0.6281  209.6475  212.0475  215.7516  216.8174    0.3630  29673.3005
+       7   Removed        S4                  3    0.6677    0.6308  208.5967  210.1352  213.5237  214.3327   -0.9727  27098.7714
+
+        Parameter Estimates         
+
+Parameter   Estimate  Standard Error
+---------  ---------  --------------
+Intercept  156.16921         5.10721
+BMI        456.07015       104.23451
+BP         294.53653        97.66559
+S5         481.68763       103.85780
+
+R-Square            0.6677    Adj R-Sq            0.6308
+
+
+                                                  3. Regression LASSO                                                   
+
+The GLMSELECT Procedure
+
+
+Dependent Variable: Y
+
+
+Number of Observations Used: 31                   
+Number of Observations Used for Validation: 14    
+Validation Average Squared Error (ASE): 738.744304
+
+  Cross Validation Information   
+
+                   Item     Value
+-----------------------  --------
+Cross Validation Method    Random
+        Number of Folds        10
+
+Partition Fractions 
+
+      Role  Fraction
+----------  --------
+  Training    0.7000
+Validation    0.3000
+   Testing    0.0000
+
+                                                     LASSO Selection Summary                                                     
+
+    Step    Action    Effect  Number Effects In  R-Square  Adj R-Sq       AIC      AICC       BIC       SBC      C(p)       PRESS
+--------  --------  --------  -----------------  --------  --------  --------  --------  --------  --------  --------  ----------
+       1   Entered       BMI                  1    0.3279    0.3048  226.4291  226.8576  227.0277  229.2970   17.5472  46406.3278
+       2   Entered        S5                  2    0.5557    0.5240  215.5964  216.4853  217.9073  219.8984    4.4470  34056.4067
+       3   Entered        BP                  3    0.6677    0.6308  208.5967  210.1352  213.5237  214.3327   -0.9727  27098.7714
+
+        Parameter Estimates         
+
+Parameter   Estimate  Standard Error
+---------  ---------  --------------
+Intercept  156.16921         5.10721
+BMI        456.07015       104.23451
+BP         294.53653        97.66559
+S5         481.68763       103.85780
+
+R-Square            0.6677    Adj R-Sq            0.6308
+
+
+                                               4. Regression ELASTIC NET                                                
+
+The GLMSELECT Procedure
+
+
+Dependent Variable: Y
+
+
+Number of Observations Used: 31                   
+Number of Observations Used for Validation: 14    
+Validation Average Squared Error (ASE): 738.744304
+
+  Cross Validation Information   
+
+                   Item     Value
+-----------------------  --------
+Cross Validation Method    Random
+        Number of Folds        10
+
+Partition Fractions 
+
+      Role  Fraction
+----------  --------
+  Training    0.7000
+Validation    0.3000
+   Testing    0.0000
+
+                                                  Elastic Net Selection Summary                                                  
+
+    Step    Action    Effect  Number Effects In  R-Square  Adj R-Sq       AIC      AICC       BIC       SBC      C(p)       PRESS
+--------  --------  --------  -----------------  --------  --------  --------  --------  --------  --------  --------  ----------
+       1   Entered       BMI                  1    0.3279    0.3048  226.4291  226.8576  227.0277  229.2970   17.5472  46406.3278
+       2   Entered        S5                  2    0.5557    0.5240  215.5964  216.4853  217.9073  219.8984    4.4470  34056.4067
+       3   Entered        BP                  3    0.6677    0.6308  208.5967  210.1352  213.5237  214.3327   -0.9727  27098.7714
+
+        Parameter Estimates         
+
+Parameter   Estimate  Standard Error
+---------  ---------  --------------
+Intercept  156.16921         5.10721
+BMI        456.07015       104.23451
+BP         294.53653        97.66559
+S5         481.68763       103.85780
+
+R-Square            0.6677    Adj R-Sq            0.6308
+
+
