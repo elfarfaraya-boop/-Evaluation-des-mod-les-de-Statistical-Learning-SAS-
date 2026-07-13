@@ -1,0 +1,27 @@
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA WORK.DIABETES
+
+NOTE: Processing inline DATALINES (45 lines)
+
+NOTE: Read 45 rows from DATALINES.
+NOTE: Wrote WORK.DIABETES (45 rows, 11 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: Option TITLE changed to 1. Selection STEPWISE avec critere AIC.
+NOTE: PROC GLMSELECT data=WORK.DIABETES
+
+NOTE: PROC GLMSELECT statement used.
+NOTE: Option TITLE changed to 2. Selection STEPWISE avec critere SBC.
+NOTE: PROC GLMSELECT data=WORK.DIABETES
+
+NOTE: PROC GLMSELECT statement used.
+NOTE: Option TITLE changed to 3. Regression LASSO.
+NOTE: PROC GLMSELECT data=WORK.DIABETES
+
+NOTE: PROC GLMSELECT statement used.
+NOTE: Option TITLE changed to 4. Regression ELASTIC NET.
+NOTE: PROC GLMSELECT data=WORK.DIABETES
+
+NOTE: PROC GLMSELECT statement used.
